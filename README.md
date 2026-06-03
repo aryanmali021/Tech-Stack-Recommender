@@ -1,3 +1,4 @@
+## Project 3 decodelabs
 # Career Recommendation System
 
 Internship Project 3 for DecodeLabs: a recommendation system that accepts user skills, compares them against job-role skill profiles, and recommends suitable careers.
@@ -9,6 +10,33 @@ Internship Project 3 for DecodeLabs: a recommendation system that accepts user s
 - Displays ranked careers with match percentages.
 - Shows matched skills and skills the user can improve for each career.
 - Includes both a browser interface and a Python CLI.
+
+## Project Structure
+
+Career-Recommendation-System
+│
+├── app.py
+├── recommender.py
+├── test_recommender.py
+├── requirements.txt
+├── README.md
+│
+├── web/
+│   ├── index.html
+│   ├── styles.css
+│   └── app.js
+│
+└── .venv/
+
+## Features
+
+- Career recommendations based on skills
+- Match percentage calculation
+- Skill alias expansion
+- Improvement suggestions
+- Browser UI
+- Command Line Interface
+- Unit testing support
 
 ## Example
 
@@ -26,13 +54,11 @@ Output:
 3. AI Engineer
 ```
 
-## Run the Web App
-
-Open this file in a browser:
-
-```text
+## Run the Web App Open this file in a browser:
+text
 web/index.html
-```
+or
+go live with html
 
 ## Run the CLI
 
