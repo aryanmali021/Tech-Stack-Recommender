@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Career Recommendation System</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace" aria-labelledby="page-title">
+        <div class="intro-panel">
+          <p class="eyebrow">DecodeLabs Project 3</p>
+          <h1 id="page-title">Career Recommendation System</h1>
+          <p class="summary">
+            Enter your skills, compare them against job-role profiles, and view ranked career recommendations with match reasons.
+          </p>
+        </div>
+
+        <form class="control-panel" id="preference-form">
+          <label class="field">
+            <span>Skills</span>
+            <input
+              id="skills"
+              name="skills"
+              type="text"
+              value="Python, ML, Cloud"
+              placeholder="Python, ML, Cloud, Docker, SQL"
+            >
+          </label>
+
+          <div class="field-grid">
+            <label class="field">
+              <span>Domain</span>
+              <select id="domain" name="domain"></select>
+            </label>
+            <label class="field">
+              <span>Level</span>
+              <select id="level" name="level"></select>
+            </label>
+            <label class="field">
+              <span>Work Style</span>
+              <select id="work-style" name="work-style"></select>
+            </label>
+          </div>
+
+          <div class="actions">
+            <button type="submit">Recommend Careers</button>
+            <button type="button" class="secondary" id="reset-button">Reset</button>
+          </div>
+        </form>
+
+        <section class="results-panel" aria-labelledby="results-title">
+          <div class="results-header">
+            <div>
+              <p class="eyebrow">Ranked Output</p>
+              <h2 id="results-title">Recommended Careers</h2>
+            </div>
+            <div class="score-note" id="score-note">Top 5 careers</div>
+          </div>
+          <div class="results-list" id="results"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

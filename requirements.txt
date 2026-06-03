@@ -1,0 +1,2 @@
+# Runtime uses only the Python standard library.
+# pypdf was installed in .venv only to read the assignment PDF.
